@@ -2,13 +2,13 @@
 
 ## F.Q List
 
-- [Token authentication requirements for Git operations.]()
+- [Token authentication requirements for Git operations.](#1.Token authentication requirements for Git operations)
 
 
 
 ## Q.A List
 
-### Token authentication requirements for Git operations
+### 1.Token authentication requirements for Git operations
 
 [git authentication doc](https://docs.github.com/en/authentication)
 
@@ -114,4 +114,10 @@
 
   - [Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)
 
-- 后续您的关于 GitHub 仓库的
+- 使用 SSH 连接您的仓库，此后您可以正常操作仓库。
+
+  ```bash
+  $ git remote add origin git@github.com:xbhel/notes.git
+  ```
+
+  
