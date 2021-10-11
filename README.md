@@ -2,5 +2,4 @@
 
 ## 1. Intro
 
->Jackin's Notes ，包括 Java、JavaScript、Big-Data、CI、OS 等方面知识。
-
+>Kisovii's Notes ，包括 Java、JavaScript、Big-Data、CI、OS 等方面知识。
