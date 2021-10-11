@@ -62,7 +62,7 @@
   > id_ed25519  id_ed25519.pub
   ```
 
-- 添加您的 SSH 密钥到 ssh-agent。确认 ssh-agent 在运行，您可以配置[自动启动 ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)或手动的启动它：
+- 添加您的 SSH 密钥到 ssh-agent。确认 ssh-agent 在运行，您可以配置[自动启动 ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases) 或以如下方式手动启动它：
 
   ```bash
   # 以后台方式启动 ssh-agent
@@ -85,7 +85,7 @@
     $ clip < ~/.ssh/id_ed25519.pub
     ```
 
-  - 登录 [GitHub](https://github.com/)，依次点击 [右上角头像 -> Settings -> SSH and GPG keys -> New SSH key](https://github.com/settings/keys):
+  - 登录 [GitHub](https://github.com/)，依次点击 [右上角头像 -> Settings -> SSH and GPG keys -> New SSH key ](https://github.com/settings/keys):
 
     ![](../../assets/tool/git-ssh-setting.png)
 
