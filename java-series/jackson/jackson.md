@@ -77,7 +77,7 @@ JAXB 是[Java EE](https://zh.wikipedia.org/wiki/Java_EE)平台的[API](https://z
 
 ## 3. Getting Starter
 
-- [Jackson in N minutes (Jackson 快速入门)](./jackson-in-N-minutes.md) 
+- [Jackson in N minutes (Jackson 快速入门)](./jackson-in-n-minutes.md) 
 - [How to solve type erasure with Jackson(Jackson - 解决类型擦除)](./jackson-type-erasure.md)
 - [How to filter properties with Jackson (使用 Jackson 如何过滤属性)](./jackson-filter-properties.md) 
 - [Serialization and custom serializer with Jaskson (Jackson 序列化及自定义序列化器)](./jackson-serialize.md)
