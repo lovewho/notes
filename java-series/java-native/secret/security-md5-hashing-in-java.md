@@ -126,11 +126,3 @@ Note, that *Hashing.md5* is deprecated. However, as the [official documentation]
 There are different ways in Java API and other third-party APIs like Apache commons and Guava to generate the MD5 hash. Choose wisely based on the requirements of the project and dependencies your project needs to follow.
 
 Java API 和其他第三方 API（如 Apache commons 和 Guava）中有不同的方法来生成 MD5 哈希。 根据项目的要求和项目需要遵循的依赖项明智地选择。
-
-```mermaid
-graph LR
-   A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
