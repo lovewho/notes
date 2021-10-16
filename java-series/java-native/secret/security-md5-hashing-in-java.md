@@ -128,6 +128,9 @@ There are different ways in Java API and other third-party APIs like Apache comm
 Java API 和其他第三方 API（如 Apache commons 和 Guava）中有不同的方法来生成 MD5 哈希。 根据项目的要求和项目需要遵循的依赖项明智地选择。
 
 ```mermaid
-graph TD
-   id1[(Database)]
+graph LR
+   A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
 ```
