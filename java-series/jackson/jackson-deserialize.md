@@ -140,12 +140,12 @@ assertThat(student.getStuNo()).isEqualTo("10001");
 
 ### 3.2. Using StdDeserializer on the Class
 
-上述在 ObjectMapper 上注册了自定义反序列化器，它在整个 ObjectMapper 范围都有效，当然我们也可以在 Class 上注册，它的作用范围仅仅限制于该类，Jackson 提供了 `@JsonDeserialize` 来实现该点。
+上述在 ObjectMapper 上注册了自定义反序列化器，它在整个 ObjectMapper 范围都有效，当然我们也可以在 Class 上注册，它的作用范围仅仅限制于该类，Jackson 提供了 `@JsonDeserialize` 来实现这一点。
 
 ```java
 public class Item{
     private String id;
-    @JsonDeserialize(using=StudentDeserializer.class)
+    @JsonDeserialize(using = StudentDeserializer.class)
     private Student student;
 }
 ```
@@ -164,16 +164,13 @@ assertThat(student.getStuNo()).isEqualTo("10001");
 其实关键点在与注册时 Class 和自定义反序列化的关联，只要关联了 Jackson 就会使用自定义的，也就是我们可以把不同的实体都关联到同一个自定义的反序列化器，这在多态的情况下特别有用，如下：
 
 ```java
+// 关联反序列化器
+@JsonDeserialize(using=StudentDeserializer.class)
 public class MyStudent extend Student{
 }
-
+// 或
+// 关联反序列化器
 module.addDeserializer(MyStudent.class, new StudentDeserializer());
-//或
-public class Item{
-    private String id;
-    @JsonDeserialize(using=StudentDeserializer.class)
-    private MyStudent mystu;
-}
 ```
 
 此时在反序列化 MyStudent 时也会使用自定义的 StudentDeserializer.
@@ -226,6 +223,4 @@ public class CustomBeanDeserializerModifier extends BeanDeserializerModifier {
 
 - [jackson: ObjectMapper.registerModule()](https://codingdict.com/sources/java/com.fasterxml.jackson.databind/11414.html)
 - [Getting Started with Custom Deserialization in Jackson](https://www.baeldung.com/jackson-deserialization)
-
-
-
+- [Example for BeanDeserializerModifier](https://java.hotexamples.com/zh/examples/com.fasterxml.jackson.databind.introspect/BeanDeserializerModifier/-/java-beandeserializermodifier-class-examples.html)
